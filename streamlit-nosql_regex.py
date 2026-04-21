@@ -24,10 +24,7 @@ DB_NAME = "test"
 
 def connect():
     # Replace with your connection string starting with the @
-    uri = (
-        f"mongodb+srv://{MONGO_USER}:{MONGO_PASS}"
-        + f"@cluster0.grxyack.mongodb.net/?appName=Cluster0"
-    )
+    uri = f"mongodb+srv://{MONGO_USER}:{MONGO_PASS}" + f"YOUR_CONNECTION_STRING"
 
     # Create a new client and connect to the server
     client = MongoClient(uri, server_api=ServerApi("1"))
